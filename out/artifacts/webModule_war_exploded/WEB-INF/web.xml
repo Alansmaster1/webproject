@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <servlet-class>LoginCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginCheckServlet</servlet-name>
+        <url-pattern>/CheckServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowItemServlet</servlet-name>
+        <servlet-class>ShowItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowItemServlet</servlet-name>
+        <url-pattern>/ShowItemServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddToAccServlet</servlet-name>
+        <servlet-class>AddToAccServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddToAccServlet</servlet-name>
+        <url-pattern>/AddToAccServlet</url-pattern>
+    </servlet-mapping>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/fmt</taglib-uri>
+            <taglib-location>/WEB-INF/lib/fmt.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/lib/c.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/sql</taglib-uri>
+            <taglib-location>/WEB-INF/lib/sql.tld</taglib-location>
+        </taglib>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jsp/jstl/x</taglib-uri>
+            <taglib-location>/WEB-INF/lib/x.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+</web-app>

@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="webModule:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/webModule_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="webModule/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webModule" />
+          <element id="module-output" name="webProject" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="servlet-api" />
+          <element id="library" level="project" name="jsp-api" />
+          <element id="file-copy" path="$PROJECT_DIR$/webModule/web/WEB-INF/lib/mysql-connector-java-5.1.49.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/webModule/web/WEB-INF/lib/jstl.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/webModule/web/WEB-INF/lib/standard.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
